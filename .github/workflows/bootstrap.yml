@@ -1,0 +1,47 @@
+name: Bootstrap site (unpack bundle + import from Wix)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/site-bundle.txt'
+permissions:
+  contents: write
+concurrency:
+  group: bootstrap
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unpack bundle
+        run: |
+          python3 - <<'PY'
+          import os, re
+          p = 'tools/site-bundle.txt'
+          if os.path.exists(p):
+              data = open(p, encoding='utf-8').read()
+              parts = re.split(r'^@@@FILE (.+?)@@@\n', data, flags=re.M)
+              for i in range(1, len(parts), 2):
+                  path, body = parts[i].strip(), parts[i+1]
+                  os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
+                  open(path, 'w', encoding='utf-8').write(body)
+                  print('wrote', path)
+              os.remove(p)
+          PY
+      - name: Import images and posts from Wix (first run only)
+        run: |
+          if [ ! -f tools/import-report.md ]; then
+            pip install requests beautifulsoup4 markdownify
+            python tools/wix_import.py
+          fi
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Bootstrap site from bundle" || echo "nothing to commit"
+          git pull --rebase
+          git push
