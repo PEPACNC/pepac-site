@@ -1,0 +1,36 @@
+---
+layout: default
+title: Members Area
+permalink: /members
+sitemap: false
+---
+<section class="section">
+  <div class="wrap" id="members-root">
+    <div class="gate">
+      <img class="seal" src="{{ '/assets/img/wix/3f36b8_91f81c2159db4be389f8478d36882097.png' | relative_url }}" alt="">
+      <p class="eyebrow">Members Area</p>
+      <h1 style="font-size:2.2rem">Welcome back.</h1>
+      <p>Enter the members password to continue. Not a member yet? <a href="{{ '/joinpepac' | relative_url }}">Join PEPAC</a>.</p>
+      <form id="gate-form"><label class="sr" for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" placeholder="Password" required><button class="btn btn-gold" type="submit">Enter</button></form>
+      <p class="err" id="gate-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var S="__SALT__",I="__IV__",D="__DATA__";
+  function b(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+  async function open(pw){
+    var e=new TextEncoder(),k=await crypto.subtle.importKey('raw',e.encode(pw),'PBKDF2',false,['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(S),iterations:250000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b(I)},key,b(D));
+    document.getElementById('members-root').innerHTML=new TextDecoder().decode(pt);
+    try{sessionStorage.setItem('pepac-m',pw)}catch(_){}
+  }
+  try{var s=sessionStorage.getItem('pepac-m');if(s)open(s).catch(function(){})}catch(_){}
+  document.getElementById('gate-form').addEventListener('submit',function(ev){ev.preventDefault();
+    var err=document.getElementById('gate-err');err.textContent='Checking…';
+    open(document.getElementById('pw').value).catch(function(){err.textContent='That password didn’t work. Please try again.'});
+  });
+})();
+</script>

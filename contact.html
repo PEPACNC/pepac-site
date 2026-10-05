@@ -1,0 +1,26 @@
+---
+layout: page
+title: Contact
+permalink: /contact
+eyebrow: Contact Us
+heading: Have a question?
+lede: "Reach out about membership, partnerships, events, endorsements, or press. We read every message."
+description: "Contact People’s Empowerment PAC."
+---
+<section class="section">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <h2>Let’s talk.</h2>
+      <p>Send us a note and the right person on our team will get back to you.</p>
+      <ul class="ticks"><li>Membership &amp; Executive Circle</li><li>Corporate sponsorships &amp; partnerships</li><li>Candidate endorsements</li><li>Events &amp; speaking</li><li>Press inquiries</li></ul>
+      {% if site.social.size > 0 %}<p><strong>Follow us:</strong> {% for s in site.social %}<a href="{{ s.url }}" rel="noopener">{{ s.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>{% endif %}
+    </div>
+    <form class="form card" data-form action="{{ site.form_endpoint }}" method="POST">
+      {% include form-fields.html subject="Website contact form" %}
+      <div class="row"><label>First name <span class="req">*</span><input name="first_name" required autocomplete="given-name"></label><label>Last name<input name="last_name" autocomplete="family-name"></label></div>
+      <label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label>
+      <label>Message <span class="req">*</span><textarea name="message" rows="6" required></textarea></label>
+      <button class="btn btn-red btn-block" type="submit">Send</button>
+    </form>
+  </div>
+</section>

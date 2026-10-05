@@ -1,0 +1,32 @@
+---
+layout: page
+title: Volunteer
+permalink: /volunteer
+eyebrow: Get Involved
+heading: Interested in volunteering?
+lede: "Democracy works when people show up. Tell us how you’d like to help and we’ll be in touch."
+hero_image: /assets/img/wix/3f36b8_6cc03107030a4ffc90a8572fe6329858.jpg
+description: "Volunteer with People’s Empowerment PAC."
+---
+<section class="section">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <h2>Your time is power, too.</h2>
+      <p>From knocking doors in your district to running our social channels, volunteers are how a PAC becomes a movement.</p>
+      <div class="photo" style="margin-top:24px"><img src="{{ '/assets/img/wix/3f36b8_f37a9d01d5b84ae78aabc16a640bd598.jpg' | relative_url }}" alt="PEPAC volunteers and supporters" loading="lazy"></div>
+    </div>
+    <form class="form card" data-form action="{{ site.form_endpoint }}" method="POST">
+      {% include form-fields.html subject="New volunteer sign-up" %}
+      <div class="row"><label>First name <span class="req">*</span><input name="first_name" required autocomplete="given-name"></label><label>Last name <span class="req">*</span><input name="last_name" required autocomplete="family-name"></label></div>
+      <div class="row"><label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label><label>Phone<input type="tel" name="phone" autocomplete="tel"></label></div>
+      <label>County or city<input name="location" autocomplete="address-level2"></label>
+      <fieldset><legend>What are you interested in?</legend>
+        <div class="checks">
+          {% assign opts = "Canvassing in Your District|Administrative Assistance|Social Media|Community Engagement|Fundraising|Marketing|Events" | split: "|" %}
+          {% for o in opts %}<label><input type="checkbox" name="interests[]" value="{{ o }}"> {{ o }}</label>{% endfor %}
+        </div>
+      </fieldset>
+      <button class="btn btn-green btn-block" type="submit">Sign me up</button>
+    </form>
+  </div>
+</section>

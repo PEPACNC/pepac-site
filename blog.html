@@ -1,0 +1,21 @@
+---
+layout: page
+title: Empowered Insights
+permalink: /blog
+eyebrow: Empowered Insights
+heading: Ideas for building power in our communities
+lede: "Perspectives on civic engagement, economic empowerment, and the policies that shape our future."
+description: "Empowered Insights — the People’s Empowerment PAC blog."
+---
+<section class="section">
+  <div class="wrap posts">
+    {% for post in site.posts %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      <div class="ph">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% endif %}</div>
+      <div class="bd"><p class="meta">{{ post.date | date: "%B %-d, %Y" }} · {{ post.author }}</p><h3>{{ post.title }}</h3><p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p></div>
+    </a>
+    {% else %}
+    <p>Posts are on their way.</p>
+    {% endfor %}
+  </div>
+</section>

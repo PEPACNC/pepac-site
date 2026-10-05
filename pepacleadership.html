@@ -1,0 +1,24 @@
+---
+layout: page
+title: Leadership
+permalink: /pepacleadership
+eyebrow: Board of Directors
+heading: Meet Our Board
+lede: "Former justices, legislators, judges, and community builders — leaders who understand how the system works, and how to make it work for us."
+description: "Meet the Board of Directors of People’s Empowerment PAC."
+---
+<section class="section">
+  <div class="wrap people">
+    {% for p in site.data.board %}
+    <article class="person">
+      <div class="ph"><img src="{{ '/assets/img/wix/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy"></div>
+      <div class="bd">
+        <h3>{{ p.name }}</h3>
+        <p class="role">{{ p.role }}</p>
+        <p>{{ p.bio[0] }}</p>{% if p.bio[1] %}<details><summary>Read more</summary><p>{{ p.bio[1] }}</p></details>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% include cta-band.html %}

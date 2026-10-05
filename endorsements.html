@@ -1,0 +1,31 @@
+---
+layout: page
+title: Endorsements
+permalink: /endorsements
+eyebrow: PEPAC Supports
+heading: Candidates who understand the issues impacting our communities
+lede: "We back leaders who have the experience, the relationships, and the commitment to deliver for working families. Help them win."
+description: "People’s Empowerment PAC’s endorsed candidates for the North Carolina Senate."
+---
+<section class="section">
+  <div class="wrap people">
+    {% for c in site.data.endorsements %}
+    <article class="person">
+      <div class="ph"><img src="{{ '/assets/img/wix/' | append: c.photo | relative_url }}" alt="{{ c.name }}" loading="lazy"></div>
+      <div class="bd">
+        <h3>{{ c.name }}</h3>
+        <p class="role">{{ c.office }} · {{ c.title }}</p>
+        <p>{{ c.bio }}</p>
+        <a class="btn btn-red" href="{{ c.donate }}" target="_blank" rel="noopener">Donate to {{ c.name | split: " " | first }}</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="section tight alt">
+  <div class="wrap center" style="max-width:720px">
+    <h2>Make sure you can vote for them.</h2>
+    <p>Check your registration, find your early-voting site, and see every deadline for the 2026 general election.</p>
+    <a class="btn btn-ghost-dark" href="{{ '/vote' | relative_url }}">Voter info &amp; deadlines</a>
+  </div>
+</section>

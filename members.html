@@ -1,0 +1,36 @@
+---
+layout: default
+title: Members Area
+permalink: /members
+sitemap: false
+---
+<section class="section">
+  <div class="wrap" id="members-root">
+    <div class="gate">
+      <img class="seal" src="{{ '/assets/img/wix/3f36b8_91f81c2159db4be389f8478d36882097.png' | relative_url }}" alt="">
+      <p class="eyebrow">Members Area</p>
+      <h1 style="font-size:2.2rem">Welcome back.</h1>
+      <p>Enter the members password to continue. Not a member yet? <a href="{{ '/joinpepac' | relative_url }}">Join PEPAC</a>.</p>
+      <form id="gate-form"><label class="sr" for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" placeholder="Password" required><button class="btn btn-gold" type="submit">Enter</button></form>
+      <p class="err" id="gate-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var S="SKbGD2IVhpAnRBhLagu0dA==",I="IiXLKpEYhJO8mvkU",D="joRrC5NOFMro8fDhDA0SoHzR6AXM/s/f0uPeTvUYT2jbxUKHSLsdSunuZevQHtxEZZ/FbU2CO7B67l/W2h42DU1Zp2vXrPnclk2uu2Cj4ZdsteS0S/mhbkh1pmris0gfiwxM1Y4zld7eLfz4+yHC3fxMpyLQCOxK+Qf4/DuO3qFDeUc2P4OTdqG3EeYnbESqUjMqum4g4fJaQ5gWO4sfgyfsvmw12Iz6HjyPatOCvlJ7sRijx47ozWo2EEoYUxbXkARpwpnc+2vNQ27D9pJK+iLX1HTPmkaipRKYDH6XyWATrlhPDnwb+q45au1g4ctVRjW0AirhzDuD+RjFHdYyeFxewQiWp9eVjvlGxSHLnJP70WHlVWEasq6uXl/T33F5GdFnZjtCI9D4rfArszfQaLWIcZ4P5a8C+zosIHEDv4ii3c6UBLWDmV/BK59M51unyFwid2A/a+Drhk3PuLb+Ywk5gloBAGoXM4gHZAblQ3nOhK/80x/z98ub5Rb2tY+aTpu6Mmv7dvaJZw9n7oNSK14xg9ErID/TWcNUvtzfd1FPHigqFpuy+paMxKL8B1b7p+JWRBJfoWLlTQstycOPmxe9dq4EKQkWxtFUP/iKft4T7hfjFlfBokOsdutO5ymw6tG46nWLqvwPl1Gyp+sQAbW7BTCUyTq83spl0hc9Qntn0e8VmBT7H0LgwzpaNxd0cT2WbQ==";
+  function b(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+  async function open(pw){
+    var e=new TextEncoder(),k=await crypto.subtle.importKey('raw',e.encode(pw),'PBKDF2',false,['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(S),iterations:250000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b(I)},key,b(D));
+    document.getElementById('members-root').innerHTML=new TextDecoder().decode(pt);
+    try{sessionStorage.setItem('pepac-m',pw)}catch(_){}
+  }
+  try{var s=sessionStorage.getItem('pepac-m');if(s)open(s).catch(function(){})}catch(_){}
+  document.getElementById('gate-form').addEventListener('submit',function(ev){ev.preventDefault();
+    var err=document.getElementById('gate-err');err.textContent='Checking…';
+    open(document.getElementById('pw').value).catch(function(){err.textContent='That password didn’t work. Please try again.'});
+  });
+})();
+</script>

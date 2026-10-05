@@ -1,0 +1,16 @@
+- { title: Home, url: / }
+- title: About
+  url: /aboutpepac
+  children:
+    - { title: Our Mission, url: /aboutpepac }
+    - { title: Leadership, url: /pepacleadership }
+- { title: Endorsements, url: /endorsements }
+- { title: Vote, url: /vote }
+- title: Get Involved
+  url: /joinpepac
+  children:
+    - { title: Membership, url: /joinpepac }
+    - { title: Executive Circle, url: /executive-circle }
+    - { title: Volunteer, url: /volunteer }
+- { title: Insights, url: /blog }
+- { title: Contact, url: /contact }

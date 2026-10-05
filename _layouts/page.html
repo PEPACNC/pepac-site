@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="page-hero{% if page.hero_image %} has-img{% endif %}"{% if page.hero_image %} style="--img:url('{{ page.hero_image | relative_url }}')"{% endif %}>
+  <div class="wrap">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.heading | default: page.title }}</h1>
+    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+  </div>
+</section>
+{{ content }}

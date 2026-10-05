@@ -1,0 +1,83 @@
+---
+layout: page
+title: Membership
+permalink: /joinpepac
+redirect_from:
+  - /pricing-plans/list
+eyebrow: PE PAC Membership
+heading: Membership is how we build power together.
+lede: "Members fuel the candidates and causes that matter to our communities — and get real benefits in return."
+hero_image: /assets/img/wix/3f36b8_c022bea6be824e329ada84a60efef58d.jpg
+description: "Join People’s Empowerment PAC as a Community Member or Leader."
+---
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Membership Benefits</p><h2>What every member gets</h2></div>
+    <div class="grid grid-4">
+      <div class="card accent-red"><h3>Direct Impact</h3><p>Ensuring that candidates who understand the issues impacting our communities have the support they need to win elections.</p></div>
+      <div class="card accent-gold"><h3>Shopping Discounts</h3><p>Access thousands of discounts on shopping, travel, entertainment, dining, and more at over one million locations nationwide.</p></div>
+      <div class="card accent-green"><h3>Event Access</h3><p>Automatic discounts on tickets to events hosted by PE PAC and partner organizations, plus exclusive “Members Only” events.</p></div>
+      <div class="card accent-ink"><h3>MOXY Subscription</h3><p>A social network connecting voters, elected representatives, thought leaders, and authorized organizations across parties, ideologies, and demographics.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="plans">
+  <div class="wrap">
+    <div class="section-head center"><p class="eyebrow">Choose Your Level</p><h2>Join us</h2></div>
+    <div class="tiers">
+      <div class="tier">
+        <span class="badge" style="align-self:flex-start;background:var(--green);color:#fff">Best Value</span>
+        <h3 style="margin-top:14px">Community Member</h3>
+        <div class="price">$10<span style="font-size:1rem">/mo</span></div>
+        <div class="per">or $110 per year</div>
+        <ul class="ticks"><li>Basic MOXY subscription</li><li>Discounts on shopping, entertainment, restaurants &amp; travel</li><li>Discounted tickets to PE PAC &amp; partner events</li><li>Exclusive “members only” events</li></ul>
+        <div class="opts">
+          <a class="btn btn-green" href="{{ site.actblue_url }}?amount=10&recurring=1&refcode=member-community-monthly" target="_blank" rel="noopener">Join monthly — $10</a>
+          <a class="btn btn-ghost-dark" href="{{ site.actblue_url }}?amount=110&refcode=member-community-annual" target="_blank" rel="noopener">Join for the year — $110</a>
+        </div>
+      </div>
+      <div class="tier lead">
+        <span class="badge" style="align-self:flex-start">Leader Level</span>
+        <h3 style="margin-top:14px">Leader</h3>
+        <div class="price">$25<span style="font-size:1rem">/mo</span></div>
+        <div class="per">or $250 per year</div>
+        <ul class="ticks"><li>Premium MOXY subscription</li><li>Discounts on shopping, entertainment, restaurants &amp; travel</li><li>Discounted tickets to PE PAC &amp; partner events</li><li>Exclusive “members only” events</li></ul>
+        <div class="opts">
+          <a class="btn btn-gold" href="{{ site.actblue_url }}?amount=25&recurring=1&refcode=member-leader-monthly" target="_blank" rel="noopener">Join monthly — $25</a>
+          <a class="btn btn-ghost" href="{{ site.actblue_url }}?amount=250&refcode=member-leader-annual" target="_blank" rel="noopener">Join for the year — $250</a>
+        </div>
+      </div>
+    </div>
+    <p class="fine center" style="max-width:640px;margin:20px auto 0">Membership contributions are processed securely by ActBlue. After joining, you’ll receive your member welcome and Members Area access by email. {{ site.paid_for_by }}</p>
+  </div>
+</section>
+
+<section class="section dark" id="boss">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">B.O.S.S.</p>
+      <h2>Business Owner Support System</h2>
+      <p>Small-business owners are the backbone of any community. Minority-owned businesses need more support than ever. PEPAC is here for you.</p>
+      <ul class="ticks">
+        <li>Your business in front of up to 200k+ potential customers</li>
+        <li>Access to our online community</li>
+        <li>PEPAC networking events</li>
+        <li>Thousands of discounts on shopping, travel, entertainment, dining, and more at over one million locations nationwide</li>
+      </ul>
+    </div>
+    <div class="donate-card">
+      <span class="badge">First 50 Bosses</span>
+      <div class="tier" style="box-shadow:none;padding:0;border:0;background:none">
+        <div class="price">$199<span style="font-size:1rem">/year</span></div>
+        <div class="per">Usually $249/year · Automatically entered to win a <strong>$500 B.O.S.S. grant</strong></div>
+      </div>
+      <form class="form" data-form action="{{ site.form_endpoint }}" method="POST">
+        {% include form-fields.html subject="B.O.S.S. subscription request" %}
+        <div class="row"><label>Name <input name="name" required autocomplete="name"></label><label>Business <input name="business" required autocomplete="organization"></label></div>
+        <div class="row"><label>Email <input type="email" name="email" required autocomplete="email"></label><label>Phone <input type="tel" name="phone" autocomplete="tel"></label></div>
+        <button class="btn btn-gold btn-block" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>

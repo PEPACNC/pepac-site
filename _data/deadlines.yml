@@ -1,0 +1,8 @@
+# 2026 NC general election — source: NC State Board of Elections
+- { date: "2026-09-04", label: "Absentee ballots go out to military & overseas voters", url: "https://www.ncsbe.gov/voting/vote-mail" }
+- { date: "2026-10-09", label: "Voter registration deadline (5 p.m.)*", url: "https://www.ncsbe.gov/registering/how-register" }
+- { date: "2026-10-15", label: "Early voting begins — same-day registration available", url: "https://www.ncsbe.gov/voting/vote-early-person" }
+- { date: "2026-10-20", label: "Absentee ballot request deadline (5 p.m.)*", url: "https://votebymail.ncsbe.gov/app/home" }
+- { date: "2026-10-31", label: "Early voting ends (3 p.m.)" }
+- { date: "2026-11-03", label: "Election Day — polls open 6:30 a.m. to 7:30 p.m.", url: "https://www.ncsbe.gov/voting/vote-person-election-day" }
+- { date: "2026-11-03", label: "Absentee ballot return deadline (7:30 p.m.)*" }

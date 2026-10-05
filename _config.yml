@@ -1,0 +1,26 @@
+title: "People's Empowerment PAC"
+short_title: PEPAC
+tagline: We Are The Solution
+description: "People's Empowerment PAC makes sure people — not just money — shape the policies that decide what lasts. Rooted in North Carolina with nationwide impact."
+url: "https://peoplesempowermentpac.org"
+lang: en-US
+
+# ---- Settings you may want to change ----
+# Main PEPAC ActBlue contribution form (no trailing slash).
+actblue_url: "https://secure.actblue.com/donate/REPLACE-ME"
+# Where every form on the site is delivered (FormSubmit.co — no account needed;
+# the first submission sends a one-time activation email to this address).
+form_endpoint: "https://formsubmit.co/nathan@peoplesempowermentpac.org"
+paid_for_by: "Paid for by People's Empowerment PAC. Not authorized by any candidate or candidate's committee."
+social: []   # e.g. - { name: Facebook, url: "https://facebook.com/..." }
+
+markdown: kramdown
+permalink: /post/:title
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude: [tools, README.md]
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }

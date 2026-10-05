@@ -1,0 +1,69 @@
+---
+layout: page
+title: Voter Info
+permalink: /vote
+redirect_from:
+  - /about-1-1
+eyebrow: Vote!
+heading: Your vote is your power. Here’s how to use it.
+lede: "Key dates for North Carolina’s 2026 general election, the official tools you need, and the organizations protecting your right to vote."
+description: "North Carolina 2026 general election dates and deadlines, voter tools, and voting rights organizations."
+---
+<section class="section">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <p class="eyebrow">Dates &amp; Deadlines</p>
+      <h2>2026 General Election</h2>
+      <ul class="deadlines">
+        {% for d in site.data.deadlines %}
+        <li data-date="{{ d.date }}"><span class="d"><small>{{ d.date | date: "%b" }}</small>{{ d.date | date: "%-d" }}</span><span class="label">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.label }}</a>{% else %}{{ d.label }}{% endif %}</span></li>
+        {% endfor %}
+      </ul>
+      <p class="fine" style="margin-top:14px">*Voter registration and absentee voting deadlines are different for <a href="https://www.ncsbe.gov/voting/military-and-overseas-voting" target="_blank" rel="noopener">military and overseas citizen voters</a>. Find all official dates at the <a href="https://www.ncsbe.gov/current-sbe-events" target="_blank" rel="noopener">NC State Board of Elections</a>.</p>
+    </div>
+    <div class="grid" style="gap:14px">
+      <a class="card tool-card accent-red" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener"><h3>Check your registration &amp; sample ballot</h3><p>Look up your registration, polling place, and the exact ballot you’ll see.</p><span class="go">Voter search &rarr;</span></a>
+      <a class="card tool-card accent-gold" href="https://www.ncsbe.gov/registering/how-register" target="_blank" rel="noopener"><h3>Register to vote</h3><p>Register by mail, online through the DMV, or in person during early voting.</p><span class="go">How to register &rarr;</span></a>
+      <a class="card tool-card accent-green" href="https://votebymail.ncsbe.gov/app/home" target="_blank" rel="noopener"><h3>Request an absentee ballot</h3><p>Any registered North Carolina voter can vote by mail — no reason needed.</p><span class="go">Request a ballot &rarr;</span></a>
+      <a class="card tool-card accent-ink" href="https://www.ncsbe.gov/voting/vote-person-election-day" target="_blank" rel="noopener"><h3>Vote in person</h3><p>Early voting sites and Election Day polling places, plus what to bring.</p><span class="go">Plan your vote &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Partners in Democracy</p>
+      <h2>North Carolina organizations protecting your vote</h2>
+    </div>
+    <h3>Statewide voting rights &amp; democracy</h3>
+    <div class="grid grid-3" style="margin-bottom:40px">
+      <a class="card tool-card" href="https://democracync.org/about-us/" target="_blank" rel="noopener"><h3>Democracy North Carolina</h3><p>One of the best-known nonpartisan voting rights groups in NC. Focuses on voter access, election protection, policy advocacy, and building civic power in Black, brown, low-wealth, student, and marginalized communities.</p><span class="go">democracync.org &rarr;</span></a>
+      <a class="card tool-card" href="https://www.youcanvote.org/" target="_blank" rel="noopener"><h3>You Can Vote</h3><p>Nonpartisan nonprofit focused on voter registration, education, and helping people overcome barriers to voting — especially youth, formerly incarcerated people, low-income voters, and communities affected by voter suppression.</p><span class="go">youcanvote.org &rarr;</span></a>
+      <a class="card tool-card" href="https://ncvpa.org/" target="_blank" rel="noopener"><h3>NC Voter Protection Alliance</h3><p>Focused on protecting voting rights, election transparency, voter protection infrastructure, and combating voter intimidation and disenfranchisement.</p><span class="go">ncvpa.org &rarr;</span></a>
+    </div>
+    <h3>Marginalized &amp; frontline communities</h3>
+    <div class="grid grid-3" style="margin-bottom:40px">
+      <a class="card tool-card" href="https://actionnc.org/" target="_blank" rel="noopener"><h3>Action NC</h3><p>Grassroots organizing on racial, immigrant, and economic justice, and increased voter participation through community leadership development.</p><span class="go">actionnc.org &rarr;</span></a>
+      <a class="card tool-card" href="https://www.ncempowermentorganization.org/civic" target="_blank" rel="noopener"><h3>NC Empowerment Organization</h3><p>Civic engagement and political education in disenfranchised and marginalized communities, including voter registration and research on legislative disenfranchisement.</p><span class="go">ncempowermentorganization.org &rarr;</span></a>
+      <a class="card tool-card" href="https://nclcvf.org/power-the-vote-nc/" target="_blank" rel="noopener"><h3>Power the Vote NC</h3><p>An initiative of the NC League of Conservation Voters Foundation focused on year-round civic engagement in frontline Eastern NC communities.</p><span class="go">nclcvf.org &rarr;</span></a>
+    </div>
+    <div class="grid grid-2">
+      <div>
+        <h3>Youth &amp; community civic engagement</h3>
+        <div class="grid" style="gap:14px">
+          <a class="card tool-card" href="https://www.kinstonteens.org/" target="_blank" rel="noopener"><h3>Kinston Teens</h3><p>Youth-led nonprofit combining civic engagement with direct community support and voter outreach for young people.</p></a>
+          <a class="card tool-card" href="https://www.commoncause.org/north-carolina/" target="_blank" rel="noopener"><h3>Common Cause NC</h3><p>National democracy reform organization with a strong NC chapter focused on voting access, civic participation, youth engagement, and fair elections.</p></a>
+        </div>
+      </div>
+      <div>
+        <h3>Returning citizens &amp; formerly incarcerated voters</h3>
+        <div class="grid" style="gap:14px">
+          <a class="card tool-card" href="https://forwardjustice.org/" target="_blank" rel="noopener"><h3>Forward Justice</h3><p>Civil rights organization heavily involved in restoring voting rights and legal advocacy for formerly incarcerated people and Black communities in NC.</p></a>
+          <a class="card tool-card" href="https://emancipatenc.org/" target="_blank" rel="noopener"><h3>Emancipate NC</h3><p>Criminal justice reform, civic empowerment, and support for formerly incarcerated individuals, including civic participation initiatives.</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include cta-band.html %}

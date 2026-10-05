@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img class="footer-seal" src="{{ '/assets/img/wix/3f36b8_91f81c2159db4be389f8478d36882097.png' | relative_url }}" alt="People's Empowerment PAC seal" width="72" height="72">
+      <p class="footer-tag">Less noise. More power.</p>
+      <p class="muted">Rooted in North Carolina with nationwide impact.</p>
+    </div>
+    <div>
+      <h4>Organization</h4>
+      <a href="{{ '/aboutpepac' | relative_url }}">Our Mission</a>
+      <a href="{{ '/pepacleadership' | relative_url }}">Leadership</a>
+      <a href="{{ '/endorsements' | relative_url }}">Endorsements</a>
+      <a href="{{ '/blog' | relative_url }}">Empowered Insights</a>
+    </div>
+    <div>
+      <h4>Take Action</h4>
+      <a href="{{ '/donate' | relative_url }}">Donate</a>
+      <a href="{{ '/joinpepac' | relative_url }}">Become a Member</a>
+      <a href="{{ '/volunteer' | relative_url }}">Volunteer</a>
+      <a href="{{ '/vote' | relative_url }}">Voter Info</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="{{ '/contact' | relative_url }}">Contact Us</a>
+      <a href="{{ '/executive-circle' | relative_url }}">Executive Circle</a>
+      <a href="{{ '/members' | relative_url }}">Members Area</a>
+      {% for s in site.social %}<a href="{{ s.url }}" rel="noopener">{{ s.name }}</a>{% endfor %}
+    </div>
+  </div>
+  <div class="wrap disclaimer">
+    <p class="paid-for">{{ site.paid_for_by }}</p>
+    <p>Contributions to People's Empowerment PAC are not tax deductible. &copy; {{ 'now' | date: '%Y' }} People's Empowerment PAC.</p>
+  </div>
+</footer>

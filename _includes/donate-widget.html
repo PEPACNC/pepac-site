@@ -1,0 +1,14 @@
+<div class="donate-card" data-donate>
+  <h3>{{ include.title | default: "Make a donation" }}</h3>
+  {% if include.text %}<p>{{ include.text }}</p>{% endif %}
+  <div class="seg" role="radiogroup" aria-label="Frequency">
+    <button type="button" role="radio" aria-checked="true" data-freq="once">One time</button>
+    <button type="button" role="radio" aria-checked="false" data-freq="monthly">Monthly</button>
+  </div>
+  <div class="amounts" role="radiogroup" aria-label="Amount">
+    <button type="button" role="radio" aria-checked="true" data-amt="50">$50</button><button type="button" role="radio" aria-checked="false" data-amt="100">$100</button><button type="button" role="radio" aria-checked="false" data-amt="250">$250</button><button type="button" role="radio" aria-checked="false" data-amt="500">$500</button><button type="button" role="radio" aria-checked="false" data-amt="1000">$1,000</button>
+    <label class="other"><span>$</span><input type="number" min="1" inputmode="numeric" placeholder="Other" aria-label="Other amount"></label>
+  </div>
+  <a class="btn btn-gold btn-block" data-donate-go href="{{ site.actblue_url }}?amount=50&refcode={{ include.ref | default: 'website' }}" target="_blank" rel="noopener">Donate $50</a>
+  <p class="fine">Secure processing by ActBlue. {{ site.paid_for_by }}</p>
+</div>

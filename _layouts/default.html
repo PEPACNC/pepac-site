@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="{{ site.lang }}" data-base="{{ site.baseurl }}">
+<head>{% include head.html %}</head>
+<body class="{{ page.body_class }}">
+{% include header.html %}
+<main id="main">{{ content }}</main>
+{% include footer.html %}
+<script>window.PEPAC={actblue:"{{ site.actblue_url }}"};</script>
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>
