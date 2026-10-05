@@ -165,6 +165,6 @@ By focusing on strategies like promoting donations, fostering volunteerism, enco
 Engagement in grassroots efforts is a continuous journey. The more individuals commit to these initiatives, the more vibrant and inclusive our democracy will become. Together, we can empower communities of color to not just participate in politics but shape it for a brighter future.
 
   
-![Close-up view of a diverse group of activists holding hands in solidarity]({{ '/assets/img/wix/3f36b8_b4036d5d75174cc78c706eb4a62a66fa.png' | relative_url }})
+![Close-up view of a diverse group of activists holding hands in solidarity]({{ '/assets/img/wix/3f36b8_b4036d5d75174cc78c706eb4a62a66fa.jpg' | relative_url }})
 
 Activists uniting for a common cause within their community

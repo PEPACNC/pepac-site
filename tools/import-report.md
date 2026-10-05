@@ -2,7 +2,7 @@
 
 - image `3f36b8_91f81c2159db4be389f8478d36882097.png` (113 KB)
 - image `3f36b8_9816454b734f45bb97923ec20a664582.jpg` (335 KB)
-- image `3f36b8_ea6f5829492142ed96840f723f44e19b.png` (4741 KB)
+- image `3f36b8_ea6f5829492142ed96840f723f44e19b.jpg` (4741 KB)
 - image `3f36b8_133d819de9224033a2987a3baee0ac2e.jpg` (58 KB)
 - image `3f36b8_f4298e90ad9249c78994e1dd71214948.jpg` (33 KB)
 - image `3f36b8_c022bea6be824e329ada84a60efef58d.jpg` (584 KB)
@@ -19,9 +19,9 @@
 - image `3f36b8_78c15279badf4518bf241f2cc39a27af.jpg` (93 KB)
 - image `3f36b8_52b755411d594e42926a68976d6d4835.jpg` (15 KB)
 - image `3f36b8_6cc03107030a4ffc90a8572fe6329858.jpg` (167 KB)
-- image `3f36b8_b4036d5d75174cc78c706eb4a62a66fa.png` (2233 KB)
-- image `3f36b8_1fb6d0ef09d249a699ece6850b3fa7ab.png` (864 KB)
-- image `3f36b8_c6768883b0a94f2186b55d86820034ae.png` (2262 KB)
+- image `3f36b8_b4036d5d75174cc78c706eb4a62a66fa.jpg` (2233 KB)
+- image `3f36b8_1fb6d0ef09d249a699ece6850b3fa7ab.jpg` (864 KB)
+- image `3f36b8_c6768883b0a94f2186b55d86820034ae.jpg` (2262 KB)
 
 ## Posts found: 6
 - image `11062b_33faad7145a148b5ba80907c78eec8c6.jpg` (218 KB)
@@ -34,8 +34,8 @@
 - image `3f36b8_9183ab16ba714b8a83a2e8e12dd5b5a1.jpg` (368 KB)
 - image `3f36b8_991c89a635f34c12812d792d8e77ac9b.jpg` (536 KB)
 - post `_posts/2025-05-30-10-bold-ways-to-champion-black-owned-businesses-this-junetee.md` via `[data-hook="post-description"]` (7418 chars)
-- image `3f36b8_a2f044326e0d4fc79e651c12caff6744.png` (2636 KB)
-- image `3f36b8_e682ebb0a69743fb8d9e0c81f3718346.png` (1801 KB)
+- image `3f36b8_a2f044326e0d4fc79e651c12caff6744.jpg` (2636 KB)
+- image `3f36b8_e682ebb0a69743fb8d9e0c81f3718346.jpg` (1801 KB)
 - image `11062b_4bcb557096a64bea9d15addf604c24b1.jpg` (326 KB)
 - post `_posts/2025-07-11-honoring-minority-mental-health-month-raleigh-durham-edition.md` via `[data-hook="post-description"]` (5438 chars)
 - image `11062b_04d7d13368c44213810733ae015644b1.jpg` (241 KB)
@@ -45,5 +45,5 @@
 - image FAILED image-url
 - image `3f36b8_3950c28ff38a4b73a1cd9c534cd018c6.jpg` (345 KB)
 - post `_posts/2025-06-30-celebrating-and-supporting-black-lgbtq-businesses-beyond-pri.md` via `[data-hook="post-description"]` (4177 chars)
-- image `3f36b8_94c8b1271ce7418a9f60a764d09b73cc.png` (2399 KB)
+- image `3f36b8_94c8b1271ce7418a9f60a764d09b73cc.jpg` (2399 KB)
 - post `_posts/2025-09-24-empowering-black-children-in-the-maga-era-strategies-for-sup.md` via `[data-hook="post-description"]` (6770 chars)

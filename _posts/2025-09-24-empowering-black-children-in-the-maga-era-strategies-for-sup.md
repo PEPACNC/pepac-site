@@ -5,7 +5,7 @@ date: "2025-09-24"
 author: "Stacey Motley"
 description: "In an age where political tensions can affect the lives of young individuals, Black children face unique challenges. The MAGA era has intensified feelings of division, which can impact their self-esteem and sense of identity. Parents play a critical role in helping children navigate this landscape effectively. Below are proven strategies designed to empower Black children, helping them thrive amid adversity.1. Foster Open CommunicationCreating a space where children feel safe to share their thou"
 permalink: "/post/empowering-black-children-in-the-maga-era-strategies-for-support-and-advocacy"
-image: "/assets/img/wix/3f36b8_94c8b1271ce7418a9f60a764d09b73cc.png"
+image: "/assets/img/wix/3f36b8_94c8b1271ce7418a9f60a764d09b73cc.jpg"
 ---
 
 In an age where political tensions can affect the lives of young individuals, Black children face unique challenges. The MAGA era has intensified feelings of division, which can impact their self-esteem and sense of identity. Parents play a critical role in helping children navigate this landscape effectively. Below are proven strategies designed to empower Black children, helping them thrive amid adversity.
@@ -59,7 +59,7 @@ Representation is powerful. Introduce your children to role models from various 
 Consider community events where they can meet local leaders and mentors. For example, workshops in your area might feature successful Black professionals who can share their journeys. This exposure reinforces the message that achievement is attainable for them as well.
 
   
-![]({{ '/assets/img/wix/3f36b8_1fb6d0ef09d249a699ece6850b3fa7ab.png' | relative_url }})  
+![]({{ '/assets/img/wix/3f36b8_1fb6d0ef09d249a699ece6850b3fa7ab.jpg' | relative_url }})  
 
 ## 5. Build a Supportive Community
 
@@ -145,4 +145,4 @@ A strong community, advocacy training, and attention to mental health are vital 
 
   
   
-![Close-up view of a bookshelf filled with diverse children's books]({{ '/assets/img/wix/3f36b8_c6768883b0a94f2186b55d86820034ae.png' | relative_url }})
+![Close-up view of a bookshelf filled with diverse children's books]({{ '/assets/img/wix/3f36b8_c6768883b0a94f2186b55d86820034ae.jpg' | relative_url }})

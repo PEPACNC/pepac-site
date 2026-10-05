@@ -39,7 +39,7 @@ Investing in Black-owned businesses also plays a significant role in economic em
 This economic empowerment can counter some burdens related to mental health challenges by generating jobs, encouraging community engagement, and building social support networks. When local Black entrepreneurs succeed, they enhance the overall well-being of everyone in the area.
 
   
-![Eye-level view of a stylish community bookstore interior]({{ '/assets/img/wix/3f36b8_a2f044326e0d4fc79e651c12caff6744.png' | relative_url }})
+![Eye-level view of a stylish community bookstore interior]({{ '/assets/img/wix/3f36b8_a2f044326e0d4fc79e651c12caff6744.jpg' | relative_url }})
 
 Community bookstores promote literacy and connection.
 
@@ -68,7 +68,7 @@ Local cafés serve more than just coffee; they offer a welcoming space for socia
 Wellness enterprises, including yoga studios like [The wHEALth Exchange](https://www.includinginclusion.com/), focus on promoting mental health. They frequently offer classes designed for stress relief and self-expression, helping patrons prioritize their mental well-being through creative outlets and physical activity.
 
   
-![Close-up view of an inviting yoga studio designed for relaxation]({{ '/assets/img/wix/3f36b8_e682ebb0a69743fb8d9e0c81f3718346.png' | relative_url }})
+![Close-up view of an inviting yoga studio designed for relaxation]({{ '/assets/img/wix/3f36b8_e682ebb0a69743fb8d9e0c81f3718346.jpg' | relative_url }})
 
 Tranquil yoga studio environments encourage mental wellness.
 
