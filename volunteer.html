@@ -18,7 +18,7 @@ description: "Volunteer with People’s Empowerment PAC."
     <form class="form card" data-form action="{{ site.form_endpoint }}" method="POST">
       {% include form-fields.html subject="New volunteer sign-up" %}
       <div class="row"><label>First name <span class="req">*</span><input name="first_name" required autocomplete="given-name"></label><label>Last name <span class="req">*</span><input name="last_name" required autocomplete="family-name"></label></div>
-      <div class="row"><label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label><label>Phone<input type="tel" name="phone" autocomplete="tel"></label></div>
+      <div class="row"><label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label><label>Mobile phone (optional)<input type="tel" name="phone" autocomplete="tel"></label></div>
       <label>County or city<input name="location" autocomplete="address-level2"></label>
       <fieldset><legend>What are you interested in?</legend>
         <div class="checks">
