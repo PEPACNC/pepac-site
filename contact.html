@@ -18,7 +18,7 @@ description: "Contact People’s Empowerment PAC."
     <form class="form card" data-form action="{{ site.form_endpoint }}" method="POST">
       {% include form-fields.html subject="Website contact form" %}
       <div class="row"><label>First name <span class="req">*</span><input name="first_name" required autocomplete="given-name"></label><label>Last name<input name="last_name" autocomplete="family-name"></label></div>
-      <label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label>
+      <div class="row"><label>Email <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label><label>Mobile phone (optional)<input type="tel" name="phone" autocomplete="tel"></label></div>
       <label>Message <span class="req">*</span><textarea name="message" rows="6" required></textarea></label>
       <button class="btn btn-red btn-block" type="submit">Send</button>
     </form>
