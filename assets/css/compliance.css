@@ -1,0 +1,13 @@
+/* SMS consent block (10DLC) — sits just above each form's submit button */
+.form > .sms-consent{order:98}
+.form > button[type=submit]{order:99}
+.sms-consent{font-size:.8rem;line-height:1.5;color:var(--muted);background:var(--paper);border:1px solid #e4dccf;border-radius:10px;padding:12px 14px}
+.dark .sms-consent{background:#fff}
+.sms-consent p{margin:8px 0 0}
+.sms-consent a{color:var(--red);font-weight:700}
+.form .sms-check{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;font-weight:700;color:var(--ink)}
+.form .sms-check input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--green);padding:0}
+/* Legal pages */
+.legal h2{font-size:1.5rem;margin-top:1.8em}
+.legal h3{font-size:1.15rem;margin-top:1.4em}
+.legal p,.legal li{font-size:1rem}
