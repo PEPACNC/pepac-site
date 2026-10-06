@@ -7,7 +7,7 @@ lang: en-US
 
 # ---- Settings you may want to change ----
 # Main PEPAC ActBlue contribution form (no trailing slash).
-actblue_url: "https://secure.actblue.com/donate/REPLACE-ME"
+actblue_url: "https://secure.actblue.com/donate/pepac_fund"
 # Where every form on the site is delivered (FormSubmit.co — no account needed;
 # the first submission sends a one-time activation email to this address).
 form_endpoint: "https://formsubmit.co/nathan@peoplesempowermentpac.org"
