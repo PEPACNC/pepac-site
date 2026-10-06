@@ -11,3 +11,7 @@
 .legal h2{font-size:1.5rem;margin-top:1.8em}
 .legal h3{font-size:1.15rem;margin-top:1.4em}
 .legal p,.legal li{font-size:1rem}
+/* Photo framing: keep faces in view */
+.page-hero.has-img{background-position:var(--pos,center)}
+.photo img{object-position:center 25%}
+.person .ph img{object-position:center 12%}
