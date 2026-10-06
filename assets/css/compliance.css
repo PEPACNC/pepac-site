@@ -15,3 +15,6 @@
 .page-hero.has-img{background-position:var(--pos,center)}
 .photo img{object-position:center 25%}
 .person .ph img{object-position:center 12%}
+.post-card .ph img,.post-cover img{object-position:center 25%}
+/* Seal: transparent PNG, no white disc behind it */
+.brand img,.footer-seal,.gate .seal{background:transparent!important;border-radius:0!important}
