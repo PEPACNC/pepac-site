@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="page-hero{% if page.hero_image %} has-img{% endif %}"{% if page.hero_image %} style="--img:url('{{ page.hero_image | relative_url }}')"{% endif %}>
+<section class="page-hero{% if page.hero_image %} has-img{% endif %}"{% if page.hero_image %} style="--img:url('{{ page.hero_image | relative_url }}');--pos:{{ page.hero_pos | default: 'center' }}"{% endif %}>
   <div class="wrap">
     {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
     <h1>{{ page.heading | default: page.title }}</h1>
