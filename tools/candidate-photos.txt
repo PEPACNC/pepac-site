@@ -1,10 +1,10 @@
-# slug | image URL | vertical focus (0 = top, 1 = bottom; where the face is) | horizontal focus
-hamm|https://assets.civicengine.com/uploads/candidate/headshot/961183/961183.jpg|0.35|0.5
-rivera|https://assets.civicengine.com/uploads/candidate/headshot/961175/jessica-rivera.jpeg|0.35|0.5
-gailliard|https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rep._James_D._Gailliard.jpg/800px-Rep._James_D._Gailliard.jpg|0.3|0.5
-speed|https://assets.civicengine.com/uploads/candidate/headshot/139214/mark-speed.jpg|0.35|0.5
-wilkins|https://assets.civicengine.com/uploads/candidate/headshot/797236/797236.jpg|0.35|0.5
-earls|https://assets.civicengine.com/uploads/candidate/headshot/187752/anita-earls.jpg|0.35|0.5
-cooper|https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Roy_Cooper_at_Roy_Cooper_Rally_April_2026-2_%28cropped%29.jpg/800px-Roy_Cooper_at_Roy_Cooper_Rally_April_2026-2_%28cropped%29.jpg|0.3|0.5
-davis|https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Portrait_of_Congressman_Don_Davis.jpg/800px-Portrait_of_Congressman_Don_Davis.jpg|0.3|0.5
-phelps|https://www.nccu.edu/sites/default/files/styles/16_9_1600x900/public/2026-07/ColePhelps16x9_2.jpg?h=caf26d13&itok=GwcBpqbI|0.4|0.5
+# slug | image URL | vertical focus (0 = top, 1 = bottom; where the face is) | horizontal focus | zoom (1 = widest square; smaller = tighter)
+hamm|https://assets.civicengine.com/uploads/candidate/headshot/961183/961183.jpg|0.35|0.5|1
+rivera|https://assets.civicengine.com/uploads/candidate/headshot/961175/jessica-rivera.jpeg|0.35|0.5|1
+gailliard|https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Rep._James_D._Gailliard.jpg/500px-Rep._James_D._Gailliard.jpg|0.3|0.5|1
+speed|https://assets.civicengine.com/uploads/candidate/headshot/139214/mark-speed.jpg|0.27|0.37|0.45
+wilkins|https://assets.civicengine.com/uploads/candidate/headshot/797236/797236.jpg|0.35|0.5|1
+earls|https://assets.civicengine.com/uploads/candidate/headshot/187752/anita-earls.jpg|0.35|0.5|1
+cooper|https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Roy_Cooper_at_Roy_Cooper_Rally_April_2026-2_%28cropped%29.jpg/500px-Roy_Cooper_at_Roy_Cooper_Rally_April_2026-2_%28cropped%29.jpg|0.3|0.5|1
+davis|https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Portrait_of_Congressman_Don_Davis.jpg/500px-Portrait_of_Congressman_Don_Davis.jpg|0.3|0.5|1
+phelps|https://www.nccu.edu/sites/default/files/styles/16_9_1600x900/public/2026-07/ColePhelps16x9_2.jpg?h=caf26d13&itok=GwcBpqbI|0.33|0.46|0.6

@@ -11,13 +11,15 @@ for line in open('tools/candidate-photos.txt'):
     line = line.strip()
     if not line or line.startswith('#'):
         continue
-    slug, url, fy, fx = [p.strip() for p in line.split('|')]
+    parts = [p.strip() for p in line.split('|')]
+    slug, url, fy, fx = parts[:4]
+    zoom = float(parts[4]) if len(parts) > 4 else 1.0
     try:
         data = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
         im = ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert('RGB')
         w, h = im.size
         small = im.copy(); small.thumbnail((900, 900)); small.save(f'{ORIG}/{slug}.jpg', quality=80)
-        side = min(w, h)
+        side = int(min(w, h) * zoom)
         cx, cy = float(fx) * w, float(fy) * h
         left = int(min(max(cx - side / 2, 0), w - side))
         top = int(min(max(cy - side / 2, 0), h - side))
