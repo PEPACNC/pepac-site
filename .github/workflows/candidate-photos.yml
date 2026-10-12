@@ -1,0 +1,25 @@
+name: Candidate photos
+on:
+  push:
+    branches: [main]
+    paths: ['tools/candidate-photos.txt', 'tools/candidate_photos.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pillow
+      - run: python tools/candidate_photos.py
+      - name: Commit photos
+        run: |
+          git config user.name "pepac-site-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/img/candidates tools/photo-originals
+          git diff --cached --quiet && exit 0
+          git commit -m "Update candidate photos"
+          git push
