@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#111013">
+{% seo %}
+<link rel="icon" href="{{ '/assets/img/wix/3f36b8_91f81c2159db4be389f8478d36882097.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600;700&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/voter-guide.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{% if site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
+</head>
+<body class="vg">
+<div class="vg-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<header class="vg-header">
+  <div class="vg-wrap">
+    <a class="vg-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/wix/3f36b8_91f81c2159db4be389f8478d36882097.png' | relative_url }}" alt="" width="44" height="44">
+      <span>People's Empowerment PAC</span>
+    </a>
+  </div>
+</header>
+
+<main id="main" class="vg-wrap">
+  <p class="vg-label">{{ page.label }}</p>
+  <h1 class="vg-h1">Vote for the candidates who support working families and <strong>OUR</strong> communities.</h1>
+  <p class="vg-intro">People's Empowerment PAC is working to build economic opportunity and empower communities across North Carolina.</p>
+
+  <ul class="vg-cands" aria-label="Candidates">
+    {% for key in page.candidates %}{% assign c = site.data.vg_candidates[key] %}
+    <li class="vg-card">
+      {% if c.photo %}<img class="vg-photo" src="{{ c.photo | relative_url }}" alt="Photo of {{ c.name }}" width="84" height="84"{% if forloop.index > 2 %} loading="lazy"{% endif %}>{% endif %}
+      <div class="vg-card-text">
+        <span class="vg-name">{{ c.name }}</span>
+        <span class="vg-office">{{ c.office }}</span>
+        {% if c.title %}<p class="vg-line"><strong>{{ c.title }}</strong>, {{ c.line }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <section class="vg-how" aria-labelledby="how-to-vote">
+    <h2 id="how-to-vote">How to Vote</h2>
+    <ul>
+      <li><strong>Early voting:</strong> Thursday, Oct. 15 to Saturday, Oct. 31 (ends at 3 p.m. on the last day)</li>
+      <li>You can register and vote at the same time during early voting. Bring a document with your name and current address.</li>
+      <li><strong>Election Day:</strong> Tuesday, Nov. 3, 6:30 a.m. to 7:30 p.m. at your assigned polling place</li>
+      <li><strong>Bring a photo ID</strong></li>
+    </ul>
+  </section>
+
+  <div class="vg-btns">
+    <a class="vg-btn vg-btn-gold" href="https://vt.ncsbe.gov/OSSite/" target="_blank" rel="noopener" data-goatcounter-click="{{ page.slug }}/btn-early-voting-sites" data-goatcounter-title="Early voting sites button ({{ page.slug }})">Find Early Voting Sites</a>
+    <a class="vg-btn vg-btn-green" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener" data-goatcounter-click="{{ page.slug }}/btn-polling-place" data-goatcounter-title="Election Day polling place button ({{ page.slug }})">Find Your Election Day Polling Place</a>
+  </div>
+
+  <p class="vg-help">Questions or need a ride? Reply to our text message.</p>
+
+  <div class="vg-disclaimer">Paid for by People's Empowerment PAC, peoplesempowermentpac.org. Not authorized by any candidate or candidate's committee.</div>
+</main>
+
+<footer class="vg-foot">
+  <a href="{{ '/privacy' | relative_url }}">Privacy Policy</a> &nbsp;·&nbsp; <a href="{{ '/terms' | relative_url }}">Terms &amp; Conditions</a>
+  {% for key in page.candidates %}{% assign c = site.data.vg_candidates[key] %}{% if c.credit %}<p class="vg-credit">{{ c.credit }}</p>{% endif %}{% endfor %}
+</footer>
+</body>
+</html>
