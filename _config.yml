@@ -13,6 +13,8 @@ actblue_url: "https://secure.actblue.com/donate/pepac_fund"
 form_endpoint: "https://formsubmit.co/nathan@peoplesempowermentpac.org"
 paid_for_by: "Paid for by People's Empowerment PAC. Not authorized by any candidate or candidate's committee."
 social: []   # e.g. - { name: Facebook, url: "https://facebook.com/..." }
+# GoatCounter visitor stats (dashboard: https://pepac.goatcounter.com). Used on the voter guide pages.
+goatcounter: pepac
 
 markdown: kramdown
 permalink: /post/:title
