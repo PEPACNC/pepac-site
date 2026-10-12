@@ -1,0 +1,65 @@
+/* PEPAC voter guide pages (hidden, text-message landing pages). Mobile first. */
+:root{
+  --ink:#111013; --paper:#f7f2ea; --red:#a3191c; --red-2:#7f1215; --gold:#e3a21a; --gold-2:#c98a0c;
+  --green:#1f7a3a; --green-2:#165c2b; --text:#24212a; --muted:#5e5864;
+  --display:"Fahkwang", Georgia, serif; --body:"Questrial", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body.vg{margin:0;background:var(--paper);color:var(--text);font:18px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+.vg img{display:block;max-width:100%}
+.vg-wrap{width:min(640px,100% - 32px);margin-inline:auto}
+
+.vg-stripe{display:grid;grid-template-columns:repeat(4,1fr);height:5px}
+.vg-stripe span:nth-child(1){background:var(--red)}
+.vg-stripe span:nth-child(2){background:var(--ink)}
+.vg-stripe span:nth-child(3){background:var(--gold)}
+.vg-stripe span:nth-child(4){background:var(--green)}
+.vg-header{background:var(--ink);color:#fff;padding:12px 0}
+.vg-brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.vg-brand img{width:44px;height:44px;object-fit:contain;flex:0 0 auto}
+.vg-brand span{font:600 1.08rem/1.2 var(--display);letter-spacing:.01em}
+
+main.vg-wrap{padding:26px 0 8px}
+.vg-label{margin:0 0 12px;font:700 .82rem/1.35 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.vg-h1{margin:0 0 14px;font:700 1.75rem/1.18 var(--display);color:var(--ink);letter-spacing:-.005em}
+.vg-h1 strong{color:var(--red)}
+.vg-intro{margin:0 0 22px;font-size:1.05rem;color:var(--text)}
+
+.vg-cands{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px}
+.vg-card{background:#fff;border-radius:14px;border-left:6px solid var(--gold);box-shadow:0 4px 14px rgba(17,16,19,.07);padding:16px;display:flex;align-items:flex-start;gap:14px}
+.vg-photo{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:#e9e2d6;border:3px solid var(--gold)}
+.vg-card-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.vg-name{font:700 1.45rem/1.15 var(--display);color:var(--ink)}
+.vg-office{font-size:1.02rem;color:var(--muted)}
+.vg-line{margin:8px 0 0;font-size:.98rem;line-height:1.45;color:var(--text)}
+.vg-line strong{color:var(--ink)}
+
+.vg-how{background:var(--ink);color:#f1edf4;border-radius:16px;padding:20px 20px 8px;margin:0 0 22px}
+.vg-how h2{margin:0 0 10px;font:700 1.35rem/1.2 var(--display);color:var(--gold)}
+.vg-how ul{margin:0;padding:0;list-style:none}
+.vg-how li{position:relative;padding:0 0 14px 22px;font-size:1.02rem}
+.vg-how li::before{content:"";position:absolute;left:2px;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.vg-how strong{color:#fff}
+
+.vg-btns{display:grid;gap:14px;margin:0 0 20px}
+.vg-btn{display:flex;align-items:center;justify-content:center;text-align:center;min-height:64px;padding:16px 20px;border-radius:999px;font:700 1.12rem/1.25 var(--body);letter-spacing:.02em;text-decoration:none;box-shadow:0 6px 16px rgba(17,16,19,.12)}
+.vg-btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.vg-btn-gold{background:var(--gold);color:var(--ink)}
+.vg-btn-gold:active,.vg-btn-gold:hover{background:#f0b532}
+.vg-btn-green{background:var(--green);color:#fff}
+.vg-btn-green:active,.vg-btn-green:hover{background:var(--green-2)}
+
+.vg-help{margin:0 0 22px;text-align:center;font-size:1.08rem;font-weight:700;color:var(--ink)}
+
+.vg-disclaimer{border:2px solid var(--ink);background:#fff;border-radius:12px;padding:14px 16px;margin:0 0 18px;font-size:1rem;line-height:1.5;color:var(--ink);text-align:center}
+
+.vg-foot{padding:6px 16px 28px;text-align:center;font-size:.9rem;color:var(--muted)}
+.vg-foot a{color:var(--muted)}
+.vg-credit{margin:10px 0 0;font-size:.78rem}
+
+@media (min-width:600px){
+  .vg-h1{font-size:2.3rem}
+  .vg-name{font-size:1.7rem}
+  main.vg-wrap{padding-top:40px}
+}
