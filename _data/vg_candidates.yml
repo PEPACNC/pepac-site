@@ -1,0 +1,56 @@
+# Candidates shown on the hidden voter guide pages (/vote-*). Pages list these keys in order.
+hamm:
+  name: "Catina Hamm"
+  office: "NC Senate, District 24"
+  title: "Army Veteran and Health Care Worker"
+  line: "fighting for stronger schools and better health care."
+  photo: /assets/img/candidates/hamm.jpg
+rivera:
+  name: "Jess Rivera"
+  office: "NC Senate, District 4"
+  title: "Marine Veteran and Small Business Owner"
+  line: "standing up for rural communities and working families."
+  photo: /assets/img/candidates/rivera.jpg
+gailliard:
+  name: "James D. Gailliard"
+  office: "NC Senate, District 11"
+  title: "Pastor and Community Leader"
+  line: "focused on economic opportunity and voting rights."
+  photo: /assets/img/candidates/gailliard.jpg
+speed:
+  name: "Mark Speed"
+  office: "NC House, District 7"
+  title: "County Commissioner"
+  line: "focused on good jobs and rural broadband."
+  photo: /assets/img/candidates/speed.jpg
+wilkins:
+  name: "Lorenza Maurice Wilkins"
+  office: "NC House, District 25"
+  title: "Nonprofit Leader and Community Advocate"
+  line: "fighting for food security and a voice for every family."
+  photo: /assets/img/candidates/wilkins.jpg
+earls:
+  name: "Anita Earls"
+  office: "NC Supreme Court"
+  title: "Supreme Court Justice and Civil Rights Lawyer"
+  line: "standing up for voting rights and fair courts."
+  photo: /assets/img/candidates/earls.jpg
+cooper:
+  name: "Roy Cooper"
+  office: "U.S. Senate"
+  title: "Two-Term Governor"
+  line: "fighting for affordable health care and good jobs."
+  photo: /assets/img/candidates/cooper.jpg
+  credit: "Roy Cooper photo: NetwonsBucket / Wikimedia Commons, CC BY-SA 4.0"
+davis:
+  name: "Don Davis"
+  office: "U.S. Congress"
+  title: "Congressman and Air Force Veteran"
+  line: "fighting for rural jobs and family farmers."
+  photo: /assets/img/candidates/davis.jpg
+phelps:
+  name: "Cole Phelps"
+  office: "District Court Judge"
+  title: "Judge and Eastern NC Native"
+  line: "focused on fair and equal justice."
+  photo: /assets/img/candidates/phelps.jpg
