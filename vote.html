@@ -6,26 +6,34 @@ redirect_from:
   - /about-1-1
 eyebrow: Vote!
 heading: Your vote is your power. Here’s how to use it.
-lede: "Key dates for North Carolina’s 2026 general election, the official tools you need, and the organizations protecting your right to vote."
-description: "North Carolina 2026 general election dates and deadlines, voter tools, and voting rights organizations."
+lede: "The official tools you need to register, check your ballot, and vote — plus the North Carolina organizations protecting your right to vote."
+description: "North Carolina voter tools — registration, absentee ballots, sample ballots, polling places — and voting rights organizations."
 ---
-<section class="section">
-  <div class="wrap split" style="align-items:start">
-    <div>
-      <p class="eyebrow">Dates &amp; Deadlines</p>
-      <h2>2026 General Election</h2>
-      <ul class="deadlines">
-        {% for d in site.data.deadlines %}
-        <li data-date="{{ d.date }}"><span class="d"><small>{{ d.date | date: "%b" }}</small>{{ d.date | date: "%-d" }}</span><span class="label">{% if d.url %}<a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.label }}</a>{% else %}{{ d.label }}{% endif %}</span></li>
-        {% endfor %}
-      </ul>
-      <p class="fine" style="margin-top:14px">*Voter registration and absentee voting deadlines are different for <a href="https://www.ncsbe.gov/voting/military-and-overseas-voting" target="_blank" rel="noopener">military and overseas citizen voters</a>. Find all official dates at the <a href="https://www.ncsbe.gov/current-sbe-events" target="_blank" rel="noopener">NC State Board of Elections</a>.</p>
+<section class="section" id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Your Vote. Your Power.</p>
+      <h2>Everything you need to vote in North Carolina</h2>
     </div>
-    <div class="grid" style="gap:14px">
-      <a class="card tool-card accent-red" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener"><h3>Check your registration &amp; sample ballot</h3><p>Look up your registration, polling place, and the exact ballot you’ll see.</p><span class="go">Voter search &rarr;</span></a>
-      <a class="card tool-card accent-gold" href="https://www.ncsbe.gov/registering/how-register" target="_blank" rel="noopener"><h3>Register to vote</h3><p>Register by mail, online through the DMV, or in person during early voting.</p><span class="go">How to register &rarr;</span></a>
-      <a class="card tool-card accent-green" href="https://votebymail.ncsbe.gov/app/home" target="_blank" rel="noopener"><h3>Request an absentee ballot</h3><p>Any registered North Carolina voter can vote by mail — no reason needed.</p><span class="go">Request a ballot &rarr;</span></a>
-      <a class="card tool-card accent-ink" href="https://www.ncsbe.gov/voting/vote-person-election-day" target="_blank" rel="noopener"><h3>Vote in person</h3><p>Early voting sites and Election Day polling places, plus what to bring.</p><span class="go">Plan your vote &rarr;</span></a>
+    <div class="grid grid-3">
+      <a class="card tool-card" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener">
+        <div class="icon bg-red"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div>
+        <h3>Verify Your Registration</h3><p>Protect your voice and your power by making sure your registration is active and up to date.</p><span class="go">Check now &rarr;</span></a>
+      <a class="card tool-card" href="https://www.ncsbe.gov/registering/how-register" target="_blank" rel="noopener">
+        <div class="icon bg-gold"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4z"/></svg></div>
+        <h3>Register to Vote</h3><p>Political power starts with participation. Registering is one of the clearest ways to shape the future of your community.</p><span class="go">Register &rarr;</span></a>
+      <a class="card tool-card" href="https://votebymail.ncsbe.gov/app/home" target="_blank" rel="noopener">
+        <div class="icon bg-green"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/></svg></div>
+        <h3>Vote at Home</h3><p>Skip the lines and vote on your terms. Request an absentee ballot and make your voice heard from home.</p><span class="go">Request a ballot &rarr;</span></a>
+      <a class="card tool-card" href="https://www.vote.org/election-reminders/" target="_blank" rel="noopener">
+        <div class="icon bg-ink"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2Zm6-6V11a6 6 0 0 0-5-5.9V4a1 1 0 0 0-2 0v1.1A6 6 0 0 0 6 11v5l-2 2v1h16v-1z"/></svg></div>
+        <h3>Get Election Reminders</h3><p>Democracy works when people show up. Sign up for text or email reminders so you never miss an election.</p><span class="go">Sign up &rarr;</span></a>
+      <a class="card tool-card" href="https://vt.ncsbe.gov/RegLkup/" target="_blank" rel="noopener">
+        <div class="icon bg-red"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg></div>
+        <h3>See Your Sample Ballot</h3><p>Power is built through preparation. Review your exact ballot ahead of time so you can vote with clarity and purpose.</p><span class="go">Look it up &rarr;</span></a>
+      <a class="card tool-card" href="https://www.ncsbe.gov/voting/vote-person-election-day" target="_blank" rel="noopener">
+        <div class="icon bg-green"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div>
+        <h3>Vote in Person</h3><p>Find early voting sites and your Election Day polling place, plus what to bring.</p><span class="go">Plan your vote &rarr;</span></a>
     </div>
   </div>
 </section>
