@@ -1,4 +1,12 @@
 ---
+redirect_from:
+  - /endorsements
+  - /vote-franklin
+  - /vote-hyde-martin
+  - /vote-nash
+  - /vote-sd24
+  - /vote-sd4
+  - /vote-vance
 layout: default
 title: "We Are The Solution"
 description: "Politics isn’t optional — it’s the system behind our wealth, our community, and our future. People’s Empowerment PAC makes sure people, not just money, shape the policies that decide what lasts."
@@ -69,21 +77,4 @@ description: "Politics isn’t optional — it’s the system behind our wealth,
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">PEPAC Supports</p>
-      <h2>Our 2026 endorsements</h2>
-    </div>
-    <div class="people">
-      {% for c in site.data.endorsements %}
-      <div class="person">
-        <div class="ph"><img src="{{ '/assets/img/wix/' | append: c.photo | relative_url }}" alt="{{ c.name }}" loading="lazy"></div>
-        <div class="bd"><h3>{{ c.name }}</h3><p class="role">{{ c.office }}</p><a class="btn btn-red" href="{{ c.donate }}" target="_blank" rel="noopener">Donate</a></div>
-      </div>
-      {% endfor %}
-    </div>
-    <p style="margin-top:28px"><a class="btn btn-ghost-dark" href="{{ '/endorsements' | relative_url }}">Meet the candidates</a></p>
-  </div>
-</section>
 {% include cta-band.html %}
