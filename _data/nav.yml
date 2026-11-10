@@ -4,7 +4,6 @@
   children:
     - { title: Our Mission, url: /aboutpepac }
     - { title: Leadership, url: /pepacleadership }
-- { title: Endorsements, url: /endorsements }
 - { title: Vote, url: /vote }
 - title: Get Involved
   url: /joinpepac
